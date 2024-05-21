@@ -16,14 +16,14 @@ app.use(
 app.use(express.json()); // pour parser les données envoyées dans le body
 // CONNECT TO DB
 const userName = "lamraniotman";
-const password = process.env.PASSWORD;
-// const password = "lamraniotman000";
-const database = "QuarkDb";
+// const dataURL = process.env.URLMONGODB;
+const password = process.env.URLMONGODB;
+const database = "test";
 mongoose.connect(
-  `mongodb+srv://lamraniotman:lamraniotman000@quark.yu70cdd.mongodb.net/QuarkDb?retryWrites=true&w=majority`
+  `mongodb+srv://lamraniotman:lamraniotman000@test.jtclscc.mongodb.net/`
 );
 app.get("/", async (req, res) => {
-  const message = "hello my friends";
+  const message = "quarkmasterAPI";
   res.json(message);
 });
 //get les message et lea utulisateur men db
@@ -46,7 +46,7 @@ app.post("/CreatMessage", async (req, res) => {
   res.json(user);
 });
 // LISTEN
-app.listen("3001", () => {
-  console.log(" Server is running on port 3001");
+app.listen("3000", () => {
+  console.log(" Server is running on port 3000");
 });
 module.exports = app;
