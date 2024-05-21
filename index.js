@@ -10,7 +10,7 @@ const app = express();
 // donner acces a port 5173
 app.use(
   cors({
-    origin: "https://quark-platfom-master.vercel.app",
+    origin: "https://quark-usms.vercel.app",
   })
 );
 app.use(express.json()); // pour parser les données envoyées dans le body
