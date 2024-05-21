@@ -10,7 +10,7 @@ const app = express();
 // donner acces a port 5173
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "http://localhost:5173",
   })
 );
 app.use(express.json()); // pour parser les données envoyées dans le body
