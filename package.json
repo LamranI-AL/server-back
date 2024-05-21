@@ -1,0 +1,25 @@
+{
+  "name": "server-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "Node build --output public",
+    "vercel-build": "echo hello from vercel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.3",
+    "nodemon": "^3.0.3",
+    "vercel": "^33.6.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
